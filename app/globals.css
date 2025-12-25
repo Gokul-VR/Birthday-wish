@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Marhey:wght@300..700&family=Meow+Script&display=swap');
+
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -119,6 +121,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -130,11 +133,13 @@
       transform: translateY(100vh) rotate(0deg);
       opacity: 1;
     }
+
     100% {
       transform: translateY(-100vh) rotate(360deg);
       opacity: 0;
     }
   }
+
   .animate-float {
     animation: float var(--duration, 15s) linear infinite;
     animation-delay: var(--delay, 0s);
