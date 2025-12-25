@@ -22,6 +22,23 @@ export function ConfettiTrigger() {
       const particleCount = 50 * (timeLeft / duration)
       confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.1, 0.3), y: Math.random() - 0.2 } })
       confetti({ ...defaults, particleCount, origin: { x: randomInRange(0.7, 0.9), y: Math.random() - 0.2 } })
+      // Left popper
+      // confetti({
+      //   ...defaults,
+      //   particleCount,
+      //   origin: { x: 0, y: 1 },
+      //   angle: 60,
+      //   spread: 70,
+      // })
+
+      // // Right popper
+      // confetti({
+      //   ...defaults,
+      //   particleCount,
+      //   origin: { x: 1, y: 1 },
+      //   angle: 120,
+      //   spread: 70,
+      // })
     }, 250)
 
     return () => clearInterval(interval)
